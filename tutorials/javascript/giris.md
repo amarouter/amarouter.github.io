@@ -7,7 +7,7 @@ JavaScript, tüm web geliştiricilerinin öğrenmesi gereken 3 dilden biridir. W
 2. düzenini belirtmek için CSS,
 3. davranışını programlamak için JavaScript bize yardımcı olur.
 ### Öğrenme Hızı
-Bu eğitimdeki öğrenme hızınız sizin elinizdedir.
+Bu rehberdeki öğrenme hızınız sizin elinizdedir.
 Eğer zorlanıyorsanız, ara verin veya materyalleri tekrar okuyun.
 Ve unutmamak gerekir ki iyi bir programcı olmanın yolu şudur: Pratik yapmak ve sürekli Kod yazmak!
 ### Sıkça Sorulan Sorular
@@ -24,7 +24,7 @@ JavaScript herkes için ücretsizdir.
 - JavaScript, HTML attribute(özellik) değerlerini değiştirebilir
 - JavaScript, HTML stillerini(CSS'in yaptığı gibi) değiştirebilir. Bir HTML elemanının stilini değiştirmek, HTML attribute'ünü değiştirmenin bir çeşididir.
 - JavaScript, bir HTML elemanını gizleyebilir veya gösterebilir.
-### Biliyor musun?
+### Biliyor musunuz?
 JavaScript ve Java, hem konsept hem de tasarım açısından tamamen farklı dillerdir.
 JavaScript, 1995 yılında Brendan Eich tarafından icat edildi ve 1997'de bir ECMA standardı haline geldi.
 ECMA-262, standardın resmi adıdır. ECMAScript, dilin resmi adıdır.
