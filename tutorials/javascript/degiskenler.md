@@ -5,7 +5,7 @@ JavaScript dilinde değişkenler veri depolamak için kullanılır.
 - Değişken ismi sayısal ifade ile başlayamaz.
 - Değişken isimleri harf, alt çizgi veya dolar işareti($) ile başlayabilir.
 - [Reserved kelimeler](## "JavaScript için ayrılmış kelimeler") değişken adı olarak kullanılamaz.(var,while,if...)
-- Birden fazla kelimeden oluşan değişken tanımlarken [best practise](## "genelgeçer kullanım alışkanlığı") olarak [Camel Case](## "Birden çok kelimeden oluşan değişken veya fonksiyon tanımlanırken ilk kelimenin baş harfi küçük ve diğer bütün kelimelerin baş harfi büyük olacak şekilde bitişik tanımlama yapılarak kullanılır.") kullanılır.(arabaRengi)
+- Birden fazla kelimeden oluşan değişken tanımlarken [best practice](## "genelgeçer kullanım alışkanlığı") olarak [Camel Case](## "Birden çok kelimeden oluşan değişken veya fonksiyon tanımlanırken ilk kelimenin baş harfi küçük ve diğer bütün kelimelerin baş harfi büyük olacak şekilde bitişik tanımlama yapılarak kullanılır.") kullanılır.(arabaRengi)
 - Değişken isimleri [büyük/küçük harf duyarlıdır](## "arabaRengi ve ArabaRengi farklı değişkenlerdir").
 
 ### Değişken Tanımlama 
