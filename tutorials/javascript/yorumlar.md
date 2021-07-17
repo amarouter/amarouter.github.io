@@ -1,7 +1,7 @@
 ## JavaScript Yorumlar
-Yazılan JavaScript kodlarını açıklamak ve kod okunurluğunu arttırmak için JavaScript yorumları kullanırız.
+Yazılan JavaScript kodlarını açıklamak ve kod okunurluğunu arttırmak için JavaScript yorumlarını kullanırız.
 
-JavaScript yorumlarını, alternatif kodun test sırasında çalışmasını önlemek için de kullanabiliriz.
+JavaScript yorumlarını, [alternatif kodun](## "Geliştirme esnasında kodun bir kısmını değiştirmeden önce yeni versiyonu da yazılabilir, böylece sonradan iki versiyon arasında seçim yapılabilir.") test sırasında çalışmasını önlemek için de kullanabiliriz.
 
 ### Tekli Yorum Satırı
 Tekli yorum satırları için `iki eğik çizgi //` kullanırız.
@@ -11,11 +11,11 @@ Tekli yorum satırları için `iki eğik çizgi //` kullanırız.
 Aşağıdaki örneklerde her JavaScript kodu öncesinde kodun ne yapacağı hakkında bilgi yorum satırı olarak verilmiştir:
 
 ```javascript
-// Başlığı değiştir:
-document.getElementById("myH").innerHTML = "Benim ilk sayfam";
+// Basligi degistirir.
+document.getElementById("myHeader").innerHTML = "Benim İlk Başlığım";
 
-// Paragrafı değiştir:
-document.getElementById("myP").innerHTML = "Benim ilk paragrafım.";
+// Paragrafi degistirir.
+document.getElementById("myParagraph").innerHTML = "Benim ilk paragrafım.";
 ```
 
 Aşağıdaki örnekte ise kod sonrasında kodun ne yapacağı hakkında bilgi yorum satırı olarak verilmiştir:
@@ -32,11 +32,11 @@ JavaScript `/*` ve `*/` arasında yazılanları çalıştırmayacaktır.
 
 ```javascript
 /*
-The code below will change the heading with id = "myH" and 
-the paragraph with id = "myP" in my web page:
+Asagidaki kod id'si "myHeader" olan basligi
+ve id'si "myParagraph" olan paragrafi degistirir.
 */
-document.getElementById("myH").innerHTML = "My First Page";
-document.getElementById("myP").innerHTML = "My first paragraph.";
+document.getElementById("myHeader").innerHTML = "Benim İlk Başlığım";
+document.getElementById("myParagraph").innerHTML = "Benim ilk paragrafım.";
 ```
 
 ** Tekli yorum satırlarının kullanımı daha yaygındır.
@@ -47,16 +47,16 @@ JavaScript ile kod yazarken çalışmasını istemediğimiz kodları devre dış
 Tek satırlık kodu devre dışı bırakmak:
 
 ```javascript
-//document.getElementById("myH").innerHTML = "Benim ilk sayfam";
-document.getElementById("myP").innerHTML = "Benim ilk paragrafım.";
+//document.getElementById("myHeader").innerHTML = "Benim İlk Başlığım";
+document.getElementById("myParagraph").innerHTML = "Benim ilk paragrafım.";
 ```
 
 Çok satırlı kodu devre dışı bırakmak:
 
 ```javascript
 /*
-document.getElementById("myH").innerHTML = "Benim ilk sayfam";
-document.getElementById("myP").innerHTML = "Benim ilk paragrafım.";
+document.getElementById("myHeader").innerHTML = "Benim İlk Başlığım";
+document.getElementById("myParagraph").innerHTML = "Benim ilk paragrafım.";
 */
 ```
 
