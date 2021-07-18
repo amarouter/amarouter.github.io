@@ -1,16 +1,16 @@
-<center><img  src="./images/jsarraymethod2.png" alt="en çok kullanılan method image" width="600"/>
+<center><img  src="./images/jsarraymethod3.png" alt="en çok kullanılan method image" width="600"/>
 </center>
 <br>
 
 <center>
 
-# JavaScript En Çok Kullanılan Array Metotları - 3
+# JavaScript En Çok Kullanılan Array Method'ları - 3
 
 </center>
 
-## concat Medtodu
+## concat Method'u
 
-concat method'u bir yada daha fazla Array'i birleştirmeyi sağlar. Concat Method'u bir immutable method'dur. Bu ozellik bize Array'lerimizin değişmediğini ifade eder.
+`concat` method'u bir yada daha fazla Array'i birleştirmeyi sağlar. `concat` immutable bir method'dur. Bu özellik bize mevcut Array'lerimizin değişmediğini ifade eder.
 
 ```javascript
 let meyveler = ["🍎", "🍌", "🍉"];
@@ -25,11 +25,13 @@ console.log(meyveler); // [ '🍎', '🍌', '🍉' ]
 console.log(sebzeler); // [ '🥕', '🥦', '🥒' ]
 ```
 
-Burada gözüktüğü gibi concat method'u ile gönderdiğimiz Array'ler değişmeyecektir.
+Burada göründüğü gibi üzerinde concat method'unu kullandığımız Array'ler değişmeyecektir.
 
-## join Medthodu
+## join Method'u
 
-join method'u tüm elementleri içerisine yazdigimiz String ile ayırarak tek bir String'e çevirir. Sadece `.join()` olarak kullanırsak virgül ile tek bir String'e çevrilecektir.
+`join` method'u Array'in tüm elemanlarını içerisine String olarak verdiğimiz ayırıcı ile birleştirerek tek bir String değerine çevirir.
+İçerisine ayırıcı vermeden sadece `.join()` olarak kullanırsak virgül ile tek bir String'e çevrilecektir.
+
 Bunu örnek ile daha iyi anlayabiliriz.
 
 ```javascript
@@ -40,7 +42,7 @@ const tekString = meyveler.join();
 console.log(tekString); // 🍎,🍌,🍉
 ```
 
-join() methodu parantezler icerisine yazdigimiz String ile ayırır.
+join() method'u parantezler içerisine yazdığımız String değerini kullanarak birleştirme yapar.
 
 ```javascript
 const tekEleman = meyveler.join("*");
@@ -48,47 +50,19 @@ const tekEleman = meyveler.join("*");
 console.log(tekEleman); // 🍎*🍌*🍉
 ```
 
-## includes Methodu
+`Dikkat` : Belirli bir ayırıcı ile birleşmiş olan String değerlerini tekrardan ayırarak Array'e çevirmek için String'in `split` method'unu kullanırız.
 
-includes yazılan değerin Array'deki elemanları içerip içermediğini kontrol eder. Elemanlardan biri eşleşirse true, eşlesmezse false değeri döndürür.
+`Dikkat`: Eğer aradığımız eleman Array'in içerisinde yoksa `-1 ` döndürecektir.
 
 ```javascript
-let isimler = ["Recai", "Koray", "izlimek"];
+indexBul = rakamlar.indexOf(7);
 
-const icerirMi = isimler.includes("Koray");
-
-console.log(icerirMi); // true
+console.log(indexBul); // -1
 ```
 
-`Dikkat` : Büyük küçük harf duyarlıdır.
+## reverse Method'u
 
-```javascript
-duyarli = isimler.includes("koray");
-
-console.log(duyarli); // false
-```
-
-## indexOf Methodu
-
-indexOf method'u Array'deki elementlerin yerini bulmak için kullanılır. Burada Aarray'lerin 0. indexten başladığını unutmamalıyız.
-
-````javascript
-const rakamlar = [0, 1, 2, 3, 4, 5, 6];
-
-const indexBul = rakamlar.indexOf(2);
-
-console.log(indexBul); // 2
-```Dikkat`: Eğer aradığımız element Array'in içerisinde yoksa -1 döndürecektir.
-
-```javascript
-indexbul = rakamlar.indexOf(7);
-
-console.log(indexbul); // -1
-````
-
-## reverse mothodu
-
-reverse method'u Array'in tersini alacaktir. reverse method'u orjinal diziyi değiştirir.
+`reverse` method'u Array'in tersini alacaktır. `reverse` method'u orijinal Array'i değiştirir.
 
 ```javascript
 const tersiniAl = rakamlar.reverse();
@@ -97,25 +71,69 @@ console.log(tersiniAl); // [ 6, 5, 4, 3, 2, 1 ]
 console.log(rakamlar); // [ 6, 5, 4, 3, 2, 1 ]
 ```
 
-## sort Methodu
+## sort Method'u
 
-sort methodu Array'deki elementleri sıralamamızı sağlar. sort methodu orjinal diziyi değiştirir.
+`sort` method'u Array'deki elementleri sıralamamızı sağlar. `sort` method'u orijinal Array'i değiştirir.
 
 ```javascript
-let isimler = ["Recai", "Koray", "izlimek"];
+let isimler = ["Recai", "Koray", "İzlimek"];
 
 const sirala = isimler.sort();
 
-console.log(sirala); // [ 'Koray', 'Recai', 'izlimek' ]
-console.log(isimler); // [ 'Koray', 'Recai', 'izlimek' ]
-
-const karisiksayilar = [5, 6, 4, 2, 1, 0];
-
-console.log(karisiksayilar.sort()); // [ 0, 1, 2, 4, 5, 6 ]
+console.log(sirala); // [ 'Koray', 'Recai', 'İzlimek' ]
+console.log(isimler); // [ 'Koray', 'Recai', 'İzlimek' ]
 ```
-
-`Dikkat`: Eğer biz tersen sıralamak istiyorsak reverse metod'u ile beraber kullanabiliriz.
 
 ```javascript
-console.log(karisiksayilar.sort().reverse()); // [ 6, 5, 4, 2, 1, 0 ]
+const karisikSayilar = [5, 6, 4, 2, 1, 0];
+
+console.log(karisikSayilar.sort()); // [ 0, 1, 2, 4, 5, 6 ]
 ```
+
+`Dikkat`: Eğer biz tersten sıralamak istiyorsak `reverse` metod'u ile beraber kullanabiliriz.
+
+```javascript
+console.log(karisikSayilar.sort().reverse()); // [ 6, 5, 4, 2, 1, 0 ]
+```
+
+## some Method'u
+
+`some` method'u girilen koşul array içerisinde en az bir kere varsa `true` yoksa `false` döndürür.
+
+```javascript
+let array = [30, 50, 23, 21, 105];
+
+const varMi = array.some((sayi) => {
+    return sayi > 32;
+});
+
+console.log(varMi); // true
+```
+
+## every Method'u
+
+`every` method'u içerisinde belirtilen koşul Array'deki tüm elemanlar tarafından sağlanıyorsa `true`, sağlanmıyorsa `false` döndürür.
+
+```javascript
+let array = [30, 50, 23, 21, 105];
+
+// Belirtilen kosul sadece 1 eleman tarafindan saglaniyor,
+// oysaki method'un true donebilmesi icin tum elemanlarin
+// kosulu sagliyor olmasi gerekir.
+const saglanmaz = array.every((sayi) => {
+    return sayi > 50;
+});
+
+console.log(saglanmaz); // false
+
+const saglanir = array.every((sayi) => {
+    return sayi > 20;
+});
+
+console.log(saglanir); // true
+```
+
+
+## Kaynakça
+
+[Mozilla Array Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array?retiredLocale=tr)
